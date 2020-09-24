@@ -7,6 +7,7 @@
 
 import Foundation
 
+// The top level object is where our results are stored
 struct MusicTopLevelObject: Decodable {
     let results: [MusicTrack]
 }
