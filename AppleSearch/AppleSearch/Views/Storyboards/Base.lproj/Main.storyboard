@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Item Search Table View Controller-->
         <scene sceneID="IZJ-GU-QKU">
             <objects>
-                <tableViewController id="Wcj-z1-5Yc" sceneMemberID="viewController">
+                <tableViewController id="Wcj-z1-5Yc" customClass="ItemSearchTableViewController" customModule="AppleSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="swp-uX-KQy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,6 +32,9 @@
                                                 <segment title="Music"/>
                                                 <segment title="Apps"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="segmentedControlValueChanged:" destination="Wcj-z1-5Yc" eventType="valueChanged" id="Xuh-j2-QVf"/>
+                                            </connections>
                                         </segmentedControl>
                                     </subviews>
                                 </stackView>
@@ -45,7 +48,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZQ1-2W-N7t">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entityCell" id="ZQ1-2W-N7t" customClass="EntityTableViewCell" customModule="AppleSearch" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="116" width="414" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZQ1-2W-N7t" id="Ggc-Md-Wbq">
@@ -87,6 +90,11 @@
                                         <constraint firstItem="sYU-ai-oai" firstAttribute="trailing" secondItem="Ggc-Md-Wbq" secondAttribute="trailingMargin" constant="8" id="yHH-ku-9Fq"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="artworkImageView" destination="sYU-ai-oai" id="MWh-Gh-Y3j"/>
+                                    <outlet property="descriptionLabel" destination="sfv-ym-Gay" id="LKO-eh-8z9"/>
+                                    <outlet property="trackNameLabel" destination="qy7-hr-OMo" id="fH5-X8-GdB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -94,6 +102,10 @@
                             <outlet property="delegate" destination="Wcj-z1-5Yc" id="Da1-he-B93"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="entitySearchBar" destination="2ue-eJ-mc5" id="ibb-4j-K8d"/>
+                        <outlet property="entitySegmentedControl" destination="gvG-xl-Zw8" id="4Qh-Sg-4bt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chU-p8-l80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

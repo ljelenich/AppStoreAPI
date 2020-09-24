@@ -16,6 +16,8 @@
 		6CFCEBAC251D084B00E0D5AE /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEBAB251D084B00E0D5AE /* AppItem.swift */; };
 		6CFCEBAF251D0D3E00E0D5AE /* AppleStoreItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEBAE251D0D3E00E0D5AE /* AppleStoreItemController.swift */; };
 		6CFCEBB3251D10E600E0D5AE /* AppleStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEBB2251D10E600E0D5AE /* AppleStoreError.swift */; };
+		6CFCEBB8251D324D00E0D5AE /* ItemSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEBB7251D324D00E0D5AE /* ItemSearchTableViewController.swift */; };
+		6CFCEBBC251D33B300E0D5AE /* EntityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEBBB251D33B300E0D5AE /* EntityTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6CFCEBAB251D084B00E0D5AE /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
 		6CFCEBAE251D0D3E00E0D5AE /* AppleStoreItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreItemController.swift; sourceTree = "<group>"; };
 		6CFCEBB2251D10E600E0D5AE /* AppleStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreError.swift; sourceTree = "<group>"; };
+		6CFCEBB7251D324D00E0D5AE /* ItemSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchTableViewController.swift; sourceTree = "<group>"; };
+		6CFCEBBB251D33B300E0D5AE /* EntityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		6CFCEBA1251D032700E0D5AE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6CFCEBB6251D323200E0D5AE /* Custom Cell */,
 				6CFCEBA6251D034400E0D5AE /* Storyboards */,
 			);
 			path = Views;
@@ -112,6 +117,7 @@
 		6CFCEBA2251D032C00E0D5AE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6CFCEBB7251D324D00E0D5AE /* ItemSearchTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -138,6 +144,14 @@
 				6CFCEBB2251D10E600E0D5AE /* AppleStoreError.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6CFCEBB6251D323200E0D5AE /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6CFCEBBB251D33B300E0D5AE /* EntityTableViewCell.swift */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +228,10 @@
 				6CFCEBAF251D0D3E00E0D5AE /* AppleStoreItemController.swift in Sources */,
 				6CFCEB88251CFDBF00E0D5AE /* AppDelegate.swift in Sources */,
 				6CFCEBA8251D039700E0D5AE /* MusicItem.swift in Sources */,
+				6CFCEBBC251D33B300E0D5AE /* EntityTableViewCell.swift in Sources */,
 				6CFCEB8A251CFDBF00E0D5AE /* SceneDelegate.swift in Sources */,
 				6CFCEBB3251D10E600E0D5AE /* AppleStoreError.swift in Sources */,
+				6CFCEBB8251D324D00E0D5AE /* ItemSearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
